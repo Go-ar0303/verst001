@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    margin: 0px 115px;
+}
+
+.header {
+    background: url("header.gif") no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.logo:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.header_subtitle {
+    font-size: 80px;
+    line-height: 700px;
+    font-weight: 700;
+    width: 20%;
+    margin-top: 50px;
+    font-family: 'Lugrasimo', cursive;
+    color: #2d3536;
+    font-style: oblique;
+
+}
+
+.header_title {
+    margin-top: 256px;
+    font-size: 120px;
+    text-shadow: 2px 2px #201e1e;
+    line-height: 900px;
+    font-weight: 900;
+    font-family: 'Lugrasimo', cursive;
+    width: 100%;
+
+}
+.header_title:hover{
+    font-size: 160px;
+    text-shadow: 2px 2px #e7dcdc;
+    line-height: 1100px;
+
+
+}
+
+.main {
+    background: linear-gradient(286.41deg, #0f5074 3.63%, #626b6d 90.98%);
+    font-family: 'Lugrasimo', cursive;
+
+}
+.main_title{
+    padding-top: 45px;
+    font-size: 25px;
+    text-shadow: 2px 2px #8a8d91;
+    line-height: 100px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Lugrasimo', cursive;
+}
+.main_subtitle{
+    padding-top: 18px;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Lugrasimo', cursive;
+
+}
+
+.main_v {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 25px;
+
+}
+
+.card_img {
+    width: 300px;
+    height: 350px;
+    align-items: center;
+    padding-left: 25px;
+}
+
+
+.card {
+    width: 350px;
+    height: 560px;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_title {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+}
+
+.card_button {
+    padding: 25px;
+
+}
+
+.card_btn {
+    padding: 15px;
+    align-items: center;
+    margin-left: 75px;
+    margin-bottom: 35px;
+    font-family: 'Roboto',
+        sans-serif;
+    background: linear-gradient(180deg, rgba(128, 143, 145, 0.66) 0%, #5487a8 100%);
+    box-shadow: 0px 7px 20px -7px #008cff;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border: 1px solid;
+    height: 65px;
+    width: 125px;
+
+}
+.card_btn:hover{
+    background: linear-gradient(180deg, rgba(128, 143, 145, 0.66) 0%, #6abbf1 100%);
+    box-shadow: 0px 7px 20px -7px #5b87ac;
+}
+
+.more {
+    align-items: center;
+    margin-left: 112px;
+
+}
+
+
+@media (max-width: 1216px) {
+    .main_v {
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(1, 560px);
+        gap: 22px;
+
+    }
+
+}
+
+
+@media (max-width: 1178px) {
+    .header_subtitle {
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 1010px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+
+    }
+
+
+
+}
+
+@media (max-width: 929px) {
+    .nav2 {
+        display: none;
+
+    }
+
+
+}
+
+
+@media (max-width:851px) {
+    .main_v {
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        grid-template-rows: repeat(1, 560px);
+        gap: 22px;
+
+    }
+}
+
+@media (max-width:793px) {
+    .header_subtitle {
+        width: 40%;
+    }
+}
+@media (max-width:657px) {
+    .cont{
+        margin: 0px 75px;
+    }
+}
+
+@media (max-width: 643px) {
+    .header_subtitle {
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+@media (max-width:562px) {
+    .cont{
+        margin: 0px 45px;
+    }
+}
+
+@media (max-width:460px) {
+    .cont{
+        margin: 0px;
+    }
+}
+
+
+.mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 25px;
+    margin-top: 5200px;
+    color: rgb(78, 74, 74);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 5000;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .car_title{
+    margin-top: 45px;
+    font-size: 25px;
+    line-height: 100px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Lugrasimo', cursive;
+  }
+  .car_title2{
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Lugrasimo', cursive;
+  }
